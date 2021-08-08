@@ -19,7 +19,7 @@ function load(url) {
 const btn = document.querySelector('#btnGet');
 const msg = document.querySelector('#message');
 btn.onclick = function () {
-    load('https://www.javascripttutorial.net/sample/promise/api.json')
+    load('https://raw.githubusercontent.com/sam-klok/PromiseDemo/main/api.json')
         .then(
             response => {
                 const result = JSON.parse(response);
@@ -31,4 +31,5 @@ btn.onclick = function () {
 
 
 // C:\Repos\PromiseDemo\api.json
+// https://raw.githubusercontent.com/sam-klok/PromiseDemo/main/api.json
 // https://www.javascripttutorial.net/sample/promise/api.json
